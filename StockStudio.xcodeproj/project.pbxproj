@@ -8,11 +8,28 @@
 
 /* Begin PBXFileReference section */
 		B23A5FBD2EA5B0A2005D47B0 /* StockStudio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StockStudio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B23A5FD22EA5B233005D47B0 /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
+		B23A5FD32EA5B248005D47B0 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		B23A5FD42EA5B28F005D47B0 /* MarketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketView.swift; sourceTree = "<group>"; };
+		B23A5FD52EA5B52F005D47B0 /* StockDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		B23A5FD72EA5B57F005D47B0 /* Exceptions for "StockStudio" folder in "StockStudio" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = B23A5FBC2EA5B0A2005D47B0 /* StockStudio */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		B23A5FBF2EA5B0A2005D47B0 /* StockStudio */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				B23A5FD72EA5B57F005D47B0 /* Exceptions for "StockStudio" folder in "StockStudio" target */,
+			);
 			path = StockStudio;
 			sourceTree = "<group>";
 		};
@@ -32,6 +49,11 @@
 		B23A5FB42EA5B0A2005D47B0 = {
 			isa = PBXGroup;
 			children = (
+				B23A5FD12EA5B1E9005D47B0 /* Utils */,
+				B23A5FD02EA5B1E3005D47B0 /* Services */,
+				B23A5FCF2EA5B1DB005D47B0 /* ViewModels */,
+				B23A5FCE2EA5B1D5005D47B0 /* Views */,
+				B23A5FCD2EA5B1CD005D47B0 /* Models */,
 				B23A5FBF2EA5B0A2005D47B0 /* StockStudio */,
 				B23A5FBE2EA5B0A2005D47B0 /* Products */,
 			);
@@ -43,6 +65,45 @@
 				B23A5FBD2EA5B0A2005D47B0 /* StockStudio.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		B23A5FCD2EA5B1CD005D47B0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B23A5FD22EA5B233005D47B0 /* Stock.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B23A5FCE2EA5B1D5005D47B0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B23A5FD52EA5B52F005D47B0 /* StockDetailView.swift */,
+				B23A5FD42EA5B28F005D47B0 /* MarketView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B23A5FCF2EA5B1DB005D47B0 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B23A5FD02EA5B1E3005D47B0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B23A5FD32EA5B248005D47B0 /* APIService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B23A5FD12EA5B1E9005D47B0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +311,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StockStudio/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -292,6 +354,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StockStudio/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;

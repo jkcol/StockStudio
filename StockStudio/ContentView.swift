@@ -2,20 +2,32 @@
 //  ContentView.swift
 //  StockStudio
 //
-//  Created by Jayden Kim on 10/19/25.
-//
 
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TabView {
+            Text("Market")
+                .tabItem {
+                    Label("Market", systemImage: "chart.line.uptrend.xyaxis")
+                }
+            
+            Text("Portfolio")
+                .tabItem {
+                    Label("Portfolio", systemImage: "briefcase")
+                }
+            
+            Text("Simulate")
+                .tabItem {
+                    Label("Simulate", systemImage: "play.circle")
+                }
+            
+            Text("AI")
+                .tabItem {
+                    Label("AI", systemImage: "brain")
+                }
         }
-        .padding()
     }
 }
 
